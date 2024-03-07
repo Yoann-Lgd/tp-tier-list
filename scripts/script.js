@@ -85,7 +85,7 @@ function drop(event, tier) {
     const films = dropArea.getElementsByClassName('carte-film');
     let isDuplicate = false;
 
-    // Vérifier si le film existe déjà dans la zone de dépôt
+    // Verifie si le film existe déjà dans la zone de dépôt
     Array.from(films).forEach((existingFilm) => {
         if (existingFilm.getElementsByTagName('p')[0].textContent === film.titre) {
             isDuplicate = true;
@@ -94,10 +94,10 @@ function drop(event, tier) {
 
     if (isDuplicate) {
         console.error('Duplicate film found in drop area:', tier);
-        return; // Annuler l'opération si un doublon est trouvé
+        return; // Annule l'opération si un doublon est trouvé
     }
 
-    // Ajouter le nouveau film s'il n'y a pas de doublon
+    // ajoute le nouveau film s'il n'y a pas de doublon
     const newCarteFilm = creerCarteFilm(film, 0);
     dropArea.appendChild(newCarteFilm);
 }
