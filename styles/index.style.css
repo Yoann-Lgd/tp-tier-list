@@ -10,20 +10,35 @@ body {
 
 .recherche {
     margin-bottom: 20px;
-}
-
-#searchResults {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+.recherche input{
+    width: 300px;
 }
 
-.film {
-    width: 150px;
-    margin: 5px;
-    padding: 10px;
-    background-color: #f0f0f0;
+#suggestions{
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-film img{ 
+    height: 80px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
+    margin-left: 10px;
+}
+
+.carte-film p{
+    margin-left: 10px;
+}
+.carte-film{
+    background-color: rgba(241, 241, 236, 0.864);
+    width: 300px;   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
 }
 
 .tiers {
