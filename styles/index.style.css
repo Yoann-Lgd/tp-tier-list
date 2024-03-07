@@ -28,19 +28,37 @@ body {
 
 .tiers {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+.tier-container {
+    width: 100%; 
+    display: flex;
+}
+
 .tier {
-    width: 23%;
+    width: 150px;
     padding: 10px;
-    background-color: #f9f9f9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .tier h2 {
     margin-top: 0;
+    flex: 1; 
+}
+
+.drop-area {
+    width: 100%; 
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -48,18 +66,18 @@ body {
         padding: 10px;
     }
 
-    .tiers {
-        flex-wrap: wrap;
-    }
-
-    .tier {
-        width: 48%;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .film {
+    .tier-container {
         width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between; 
+    }
+
+    .tier{
+        flex: 0 0 110px; 
+    }
+
+    .drop-area {
+        width: calc(100% - 110px); 
+        border-left: none;
     }
 }
