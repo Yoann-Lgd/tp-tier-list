@@ -17,6 +17,12 @@ body {
     width: 300px;
 }
 
+.films-ajoutes{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+}
 #suggestions{
     display: flex;
     flex-direction: column;

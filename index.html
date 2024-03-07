@@ -17,39 +17,37 @@
             <div id="suggestions"></div>
         </div>
 
-        <div class="films-ajoutes">
-            
+        <div class="films-ajoutes" id="dropFilmAjoutes"  ondrop="drop(event, 'FilmAjoutes')" ondragover="allowDrop(event)">
         </div>
 
         <div class="tiers">
             <div class="tier-container">
-                <div class="tier" id="topTier" ondrop="drop(event, 'topTier')" ondragover="allowDrop(event)">
+                <div class="tier" id="topTier">
                     <h2>Top Tier</h2>
                 </div>
-                <div class="drop-area" id="dropTopTier" ondrop="dropOnSide(event, 'topTier')" ondragover="allowDrop(event)"></div>
+                <div class="drop-area" id="dropTopTier" ondrop="drop(event, 'TopTier')" ondragover="allowDrop(event)"></div>
             </div>
             <div class="tier-container">
-                <div class="tier" id="highTier" ondrop="drop(event, 'highTier')" ondragover="allowDrop(event)">
+                <div class="tier" id="highTier">
                     <h2>Haute Qualité</h2>
                 </div>
-                <div class="drop-area" id="dropHighTier" ondrop="dropOnSide(event, 'highTier')" ondragover="allowDrop(event)"></div>
+                <div class="drop-area" id="dropHighTier" ondrop="drop(event, 'HighTier')" ondragover="allowDrop(event)"></div>
             </div>
             <div class="tier-container">
-                <div class="tier" id="midTier" ondrop="drop(event, 'midTier')" ondragover="allowDrop(event)">
+                <div class="tier" id="midTier" >
                     <h2>Moyenne Qualité</h2>
                 </div>
-                <div class="drop-area" id="dropMidTier" ondrop="dropOnSide(event, 'midTier')" ondragover="allowDrop(event)"></div>
+                <div class="drop-area" id="dropMidTier" ondrop="drop(event, 'MidTier')" ondragover="allowDrop(event)"></div>
             </div>
             <div class="tier-container">
-                <div class="tier" id="lowTier" ondrop="drop(event, 'lowTier')" ondragover="allowDrop(event)">
+                <div class="tier" id="lowTier">
                     <h2>Basse Qualité</h2>
                 </div>
-                <div class="drop-area" id="dropLowTier" ondrop="dropOnSide(event, 'lowTier')" ondragover="allowDrop(event)"></div>
+                <div class="drop-area" id="dropLowTier" ondrop="drop(event, 'LowTier')" ondragover="allowDrop(event)"></div>
             </div>
-        </div>
     </div>
+        
     <script src="./config.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
-</html>
 </html>
