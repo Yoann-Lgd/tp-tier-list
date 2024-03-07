@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Liste de Films</title>
     <link rel="stylesheet" href="./styles/index.style.css">
-    <title>Film tier list</title>
 </head>
 <body>
-    <head>
-        <p>test</p>
-    </head>
-    <main>
-
-    </main>
+    <div class="container">
+        <h1>Générateur de Liste de Films</h1>
+        <div class="recherche">
+            <input type="text" id="searchInput" placeholder="Rechercher des films...">
+            <div id="searchResults"></div>
+        </div>
+        <div class="tiers">
+            <div class="tier" id="topTier">
+                <h2>Top Tier</h2>
+            </div>
+            <div class="tier" id="highTier">
+                <h2>Haute Qualité</h2>
+            </div>
+            <div class="tier" id="midTier">
+                <h2>Moyenne Qualité</h2>
+            </div>
+            <div class="tier" id="lowTier">
+                <h2>Basse Qualité</h2>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
