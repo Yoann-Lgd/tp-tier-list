@@ -1,5 +1,6 @@
 const rechercheInput = document.getElementById('searchInput');
 const suggestions = document.getElementById('suggestions');
+const apiKey = process.env.API_KEY;
 
 async function rechercherFilmsSuggérésTMDB(titre) {
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${titre}`;
